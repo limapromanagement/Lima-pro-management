@@ -1,108 +1,111 @@
-/* General Styles */
+/* Base Styles */
 body {
-    background-color: #000000; /* Black background for luxury feel */
-    color: #FFD700; /* Gold text */
-    font-family: 'Helvetica', sans-serif;
-    margin: 0;
-    padding: 0;
+  background-color: #ffffff; /* clean white background */
+  color: #1c1c1c; /* dark gray text for readability */
+  font-family: 'Helvetica', Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
 }
 
 /* Header */
 header {
-    text-align: center;
-    padding: 50px 20px;
+  text-align: center;
+  padding: 60px 20px;
 }
 
 header h1 {
-    font-size: 3em;
-    margin-bottom: 10px;
-    color: #FFD700; /* Gold headers */
+  font-size: 3em;
+  margin-bottom: 10px;
+  font-weight: 700;
 }
 
 header p {
-    font-size: 1.2em;
-    color: #f5f5f5; /* Slight off-white for body text */
+  font-size: 1.2em;
+  margin: 5px 0;
+  color: #333333;
 }
 
 /* Sections */
 section {
-    padding: 40px 20px;
-    max-width: 900px;
-    margin: 0 auto;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
 }
 
 h2 {
-    font-size: 2em;
-    color: #FFD700; /* Gold headings */
-    margin-bottom: 20px;
-    text-align: center;
+  font-size: 2em;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #000000;
 }
 
 ul {
-    list-style-type: disc;
-    padding-left: 20px;
+  list-style-type: disc;
+  padding-left: 20px;
 }
 
 ul li {
-    margin-bottom: 10px;
-    font-size: 1.1em;
-    color: #f5f5f5;
+  margin-bottom: 15px;
+  font-size: 1.1em;
 }
 
-/* Form */
+/* Forms */
 form {
-    display: flex;
-    flex-direction: column;
-    max-width: 500px;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 label {
-    margin-top: 15px;
-    margin-bottom: 5px;
-    color: #FFD700;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: 600;
 }
 
 input, textarea {
-    padding: 10px;
-    border: 1px solid #FFD700;
-    background-color: #000000;
-    color: #f5f5f5;
-    border-radius: 5px;
+  padding: 10px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  font-size: 1em;
+  color: #1c1c1c;
+  background-color: #ffffff;
 }
 
 button {
-    margin-top: 20px;
-    padding: 12px;
-    background-color: #FFD700;
-    color: #000000;
-    border: none;
-    font-size: 1.1em;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: all 0.3s ease;
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  font-size: 1.1em;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
 }
 
 button:hover {
-    background-color: #ffffff;
-    color: #000000;
+  background-color: #333333;
 }
 
 /* Links */
 a {
-    color: #FFD700;
-    text-decoration: none;
+  color: #000000;
+  text-decoration: none;
+  font-weight: 600;
 }
 
 a:hover {
-    color: #ffffff;
+  color: #555555;
 }
 
 /* Footer */
 footer {
-    text-align: center;
-    padding: 30px 20px;
-    border-top: 1px solid #FFD700;
-    color: #f5f5f5;
-    font-size: 0.9em;
+  text-align: center;
+  padding: 30px 20px;
+  border-top: 1px solid #000000;
+  color: #555555;
+  font-size: 0.9em;
 }
