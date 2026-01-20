@@ -1,65 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lima Pro Management LLC</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lima Pro Management | Airbnb Property Management South Florida</title>
+  <meta name="description" content="Hands-on Airbnb & short-term rental management in Miami, Homestead, and Key Largo. Owner-operated. Bilingual. Transparent pricing." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <h1>Lima Pro Management LLC</h1>
-    <p>Personal, Hands-On Property Management in Miami & Surrounding Areas</p>
-    <p>Whether it's maximizing Airbnb income or managing long-term tenants, we handle the details so you don't have to.</p>
-  </header>
 
-  <section id="services">
-    <h2>Our Services</h2>
-    <ul>
-      <li>Short-Term Rental Management (Airbnb) – Full guest management, cleaning coordination, listing optimization, and 24/7 support.</li>
-      <li>Long-Term Rental Management – Lease setup, tenant screening, rent collection, and property maintenance for peace of mind.</li>
-      <li>Property Consultation – Advice on maximizing rental income and preparing homes for rental success.</li>
+<header>
+  <div class="container">
+    <h1>Lima Pro Management</h1>
+    <p class="tagline">Hands-On Airbnb & Short-Term Rental Management</p>
+    <a class="phone" href="tel:17863027630">📞 786-302-7630</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h2>South Florida Airbnb Management Without the Corporate Headaches</h2>
+    <p>
+      Helping small property owners in Miami, Homestead, and Key Largo maximize short-term rental income with personal, hands-on management.
+    </p>
+    <a href="#contact" class="btn">Request a Free Property Evaluation</a>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h3>Owner-Operated. Local. Involved.</h3>
+    <p>
+      Lima Pro Management is led by <strong>Emmanuel Lima</strong>, an Airbnb Superhost and licensed Florida Realtor.
+      We manage properties the same way we manage our own — with attention, strategy, and accountability.
+    </p>
+    <p>
+      We proudly serve Miami, Homestead, Key Largo, and surrounding South Florida markets.
+      <strong>Bilingual service available in English & Spanish.</strong>
+    </p>
+  </div>
+</section>
+
+<section class="section light">
+  <div class="container">
+    <h3>Our Services</h3>
+    <div class="grid">
+      <div class="card">
+        <h4>Co-Host / Light Management</h4>
+        <ul>
+          <li>Guest messaging & support</li>
+          <li>Calendar & booking management</li>
+          <li>Pricing optimization</li>
+          <li>Review management</li>
+        </ul>
+        <p class="price">Typical pricing: <strong>10–15%</strong></p>
+      </div>
+
+      <div class="card">
+        <h4>Full-Service Airbnb Management</h4>
+        <ul>
+          <li>Everything in co-hosting</li>
+          <li>Listing optimization</li>
+          <li>Cleaning & turnover coordination</li>
+          <li>Restocking & issue handling</li>
+        </ul>
+        <p class="price">Typical pricing: <strong>20–25%</strong></p>
+      </div>
+    </div>
+
+    <p class="note">
+      Custom pricing available for multi-units, luxury homes, or unique situations.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h3>Why Owners Choose Lima Pro</h3>
+    <ul class="checklist">
+      <li>We manage our own Airbnbs</li>
+      <li>Airbnb Superhost experience</li>
+      <li>Direct communication — no call centers</li>
+      <li>South Florida market expertise</li>
+      <li>Bilingual (English / Spanish)</li>
     </ul>
-  </section>
+  </div>
+</section>
 
-  <section id="packages">
-    <h2>Packages</h2>
-    <ul>
-      <li><strong>Basic:</strong> Listing creation, guest communication, monthly reporting.</li>
-      <li><strong>Premium:</strong> Full-service management including cleaning, check-ins, and 24/7 support.</li>
-      <li><strong>Custom:</strong> Tailored management solutions for your property needs.</li>
-    </ul>
-  </section>
+<section id="contact" class="section light">
+  <div class="container">
+    <h3>Request a Free Property Evaluation</h3>
+    <form name="property-evaluation" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="property-evaluation" />
 
-  <section id="pricing">
-    <h2>Pricing</h2>
-    <p>Simple, transparent pricing. Contact us for a personalized quote based on your property and needs.</p>
-  </section>
-
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <form action="mailto:limapromanagement@gmail.com" method="POST" enctype="text/plain">
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name" required>
-
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" required>
-
-      <label for="phone">Phone</label>
-      <input type="tel" id="phone" name="phone" required>
-
-      <label for="message">Message</label>
-      <textarea id="message" name="message" rows="4" required></textarea>
+      <input type="text" name="name" placeholder="Full Name" required />
+      <input type="email" name="email" placeholder="Email Address" required />
+      <input type="tel" name="phone" placeholder="Phone Number" required />
+      <input type="text" name="location" placeholder="Property City / Area" />
+      <input type="number" name="bedrooms" placeholder="Number of Bedrooms" />
+      <select name="listed">
+        <option value="">Currently listed on Airbnb?</option>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+      <textarea name="message" placeholder="Tell us about your property"></textarea>
 
       <button type="submit">Submit</button>
     </form>
 
-    <p>Phone: <a href="tel:7863027630">786-302-7630</a></p>
-    <p>Email: <a href="mailto:limapromanagement@gmail.com">limapromanagement@gmail.com</a></p>
-  </section>
+    <p class="contact-info">
+      📞 <a href="tel:17863027630">786-302-7630</a><br />
+      📧 limapromanagement@gmail.com
+    </p>
+  </div>
+</section>
 
-  <footer>
-    <p>© 2026 Lima Pro Management LLC. Bilingual (English/Spanish). Licensed Realtor & Airbnb Superhost.</p>
-  </footer>
+<footer>
+  <p>© 2026 Lima Pro Management · Miami, FL</p>
+</footer>
+
 </body>
 </html>
